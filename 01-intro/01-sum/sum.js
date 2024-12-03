@@ -1,3 +1,8 @@
 export default function sum(a, b) {
-  /* ваш код */
+  const wrongType = typeof a !== 'number' || typeof b !== 'number';
+  if(wrongType) {
+    throw new TypeError('Wrong type');
+  }
+
+  return a + b;
 }
