@@ -10,3 +10,7 @@ export interface Task {
   description: string;
   status: TaskStatus;
 }
+
+export type TaskKeys = keyof Task
+
+export const TASK_KEYS:TaskKeys[] = ['id', 'status', 'description', 'status'];
