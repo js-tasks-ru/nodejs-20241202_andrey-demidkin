@@ -5,8 +5,8 @@ import { UsersModule } from "../users/users.module";
 import { NotificationService } from "../providers/NotificationService";
 
 @Module({
-  imports: [],
+  imports: [UsersModule],
   controllers: [TasksController],
-  providers: [TasksService],
+  providers: [TasksService, NotificationService],
 })
 export class TasksModule {}
