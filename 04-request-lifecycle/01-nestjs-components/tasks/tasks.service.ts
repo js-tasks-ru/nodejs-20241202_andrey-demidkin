@@ -5,7 +5,7 @@ import { CreateTaskDto, Task, TaskStatus, UpdateTaskDto } from "./task.model";
 export class TasksService {
   private tasks: Task[] = [];
 
-  getAllTasks() {
+  async getAllTasks() {
     return { tasks: this.tasks };
   }
 
